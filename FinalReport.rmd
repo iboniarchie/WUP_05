@@ -11,6 +11,7 @@ require(tigerstats)
 triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
 females=filter(triUmp,gender=="F")
 
+
 ```
 
 # Introduction
@@ -48,8 +49,9 @@ basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100,fill=treatment                 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-
-
+This plot shows that the women who took the drug was more likely to get the  
+Aids, than if you took the placebo. Thsi shows that the drug is not effective.  
+The odds a woman taking the drung is 3/2 than is you took the placebo.  
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
